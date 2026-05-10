@@ -1,0 +1,40 @@
+site_name: Developer Operating Manual (Antigravity)
+site_description: Disciplined, token-efficient development workflow for Antigravity IDE
+
+site_url: https://azmatusman.github.io/Developer-Antigravity-Operating-Manual/
+repo_url: https://github.com/azmatusman/Developer-Antigravity-Operating-Manual
+repo_name: azmatusman/Developer-Antigravity-Operating-Manual
+edit_uri: edit/main/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+
+plugins:
+  - search
+
+nav:
+  - Home: docs/README.md
+  - Start Here: docs/START_HERE.md
+  - Daily Loop: docs/workflows/DAILY_LOOP.md
+  - Workflows:
+      - /plan: docs/workflows/PLAN.md
+      - /tdd: docs/workflows/TDD.md
+      - /debug: docs/workflows/DEBUG.md
+      - /review: docs/workflows/REVIEW.md
+      - /close-session: docs/workflows/CLOSE_SESSION.md
+      - /new-knowledge-item: docs/workflows/NEW_KNOWLEDGE_ITEM.md
+  - MCPs:
+      - Overview: docs/mcps/MCP_OVERVIEW.md
+      - Sequential Thinking: docs/mcps/SEQUENTIAL_THINKING.md
+      - Context7: docs/mcps/CONTEXT7.md
+  - Graphify: docs/graphify/GRAPHIFY_GUIDE.md
+  - Model Selection: docs/model-selection/MODEL_SELECTION.md
+  - Examples: docs/examples/EXAMPLE_NEW_APP.md
