@@ -1,8 +1,8 @@
 # /refactor
 
-**Purpose:** Improve structure without changing behavior.
+**Purpose:** Safe incremental refactoring.
 
-## Rules
-- green baseline required
+Rules:
+- tests green baseline required
 - one refactor move at a time
-- tests after every step
+- run tests after each change

@@ -1,12 +1,11 @@
 # Contributing
 
-Thanks for contributing!
-
 ## Principles
-- Keep guidance tool-agnostic where possible
-- Prefer small, reviewable changes
-- Avoid adding duplicate workflows/skills
+- Keep docs concise and practical.
+- Avoid duplicates; prefer a single canonical page per concept.
+- Keep examples tool/stack-agnostic.
 
-## Pull Requests
-- Update navigation links if you add/remove pages
-- Keep docs concise; link out to deeper pages
+## If you add pages
+- Update `docs/NAVIGATION.md`.
+- Update `_sidebar.md`.
+- Update `mkdocs.yml` nav (if using GitHub Pages).

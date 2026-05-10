@@ -2,9 +2,10 @@
 
 **Purpose:** Emergency bug fix with minimal risk.
 
-## Rules
+Rules:
 - stop other work
 - confirm root cause
-- write failing test
+- failing test first
 - minimal fix
 - full test suite
+- document root cause and risk

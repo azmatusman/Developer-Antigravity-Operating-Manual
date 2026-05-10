@@ -1,3 +1,9 @@
 # /onboard
 
-**Purpose:** Generate a project map for an unfamiliar codebase.
+**Purpose:** Understand an unfamiliar codebase.
+
+Output:
+- project map
+- key entry points
+- module responsibilities
+- areas of concern

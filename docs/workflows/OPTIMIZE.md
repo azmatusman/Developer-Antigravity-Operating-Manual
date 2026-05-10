@@ -1,8 +1,9 @@
 # /optimize
 
-**Purpose:** Performance work done responsibly.
+**Purpose:** Performance optimization done responsibly.
 
-## Rules
+Rules:
 - measure before optimizing
 - one optimization at a time
-- verify behavior is unchanged
+- verify behavior unchanged
+- document before/after metrics
