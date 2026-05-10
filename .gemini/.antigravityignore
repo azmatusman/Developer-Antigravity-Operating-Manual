@@ -1,0 +1,145 @@
+# Dependencies
+node_modules/
+dist/
+build/
+vendor/
+*.lock
+coverage/
+.venv/
+
+# Environment & Cache
+.env
+.env.*.local
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__
+# Testing & Logs
+.coverage
+htmlcov/
+*.log
+test_results/
+# IDEs
+.vscode/
+.idea/
+*.swp
+# Distribution
+.pytest_cache/
+# Large Data / Media (Exclude Large CSVs)
+*.csv
+*.png
+*.zip
+# VCS
+.git/
+.gitignore
+.gitmodules
+# Node / Frontend
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+# Python
+__pycache__/
+*.py[cod]
+venv/
+# Java / JVM
+target/
+*.class
+*.jar
+# .NET / C++
+bin/
+obj/
+*.exe
+*.dll
+*.so
+# Go / Rust
+# Locks
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+poetry.lock
+Pipfile.lock
+# Logs / dumps
+logs/
+*.dump
+# Data
+*.db
+*.sqlite
+*.parquet
+# Media
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mp3
+# Archives
+*.tar
+*.gz
+# IDE / OS
+# Secrets
+.env.*
+*.key
+*.pem
+secrets/
+# Coverage / reports
+reports/
+# AI tooling
+graphify-out/
+.cache/
+.gitconfig
+.gitkeep
+bower_components/
+jspm_packages/
+.parcel-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pyo
+*.pyd
+ENV/
+pip-wheel-metadata/
+.eggs/
+*.egg-info/
+*.war
+*.ear
+.gradle/
+.mvn/
+Debug/
+Release/
+*.dylib
+*.obj
+*.o
+pkg/
+Cargo.lock
+zig-cache/
+zig-out/
+composer.lock
+*.trace
+*.dmp
+hs_err_pid*
+*.sqlite3
+*.mdb
+*.tsv
+*.orc
+*.avro
+*.dat
+*.webp
+*.svg
+*.ico
+*.mov
+*.avi
+*.mkv
+*.wav
+*.rar
+*.7z
+*.iml
+*.swo
+*.crt
+*.pfx
+*.kubeconfig
+credentials/
+doc/_build/
+site/
+.antigravity-cache/
