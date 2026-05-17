@@ -1,6 +1,6 @@
 ---
 name: brainstorming
-description: Clarify problem space, constraints, and intent before planning or implementation
+description: Clarify problem space, constraints, and intent before planning or implementation. Produces clarity ONLY — NEVER code, architecture, or solutions.
 ---
 
 # Brainstorming
@@ -57,11 +57,22 @@ Brainstorming must yield:
 - known constraints (technical, security, operational)
 - open questions or unknowns
 
-Brainstorming does NOT:
+## What Brainstorming Does NOT Produce (Forbidden Outputs)
 
-- design architecture
-- write plans
-- prescribe implementations
+Brainstorming **NEVER** produces:
+
+- **Code** — not even "example code", "sketch code", or "pseudocode"
+- **Architecture** — no component diagrams, no system design, no tech stack choices
+- **File structures** — no directory layouts, no "we'll create these files"
+- **Task breakdowns** — no "Step 1: Create..., Step 2: Implement..."
+- **Database schemas** — no table designs, no ER diagrams
+- **API designs** — no endpoints, no request/response schemas
+- **Library/framework recommendations** — no "we should use X"
+- **Implementation approaches** — no "we could use the strategy pattern here"
+
+If you catch yourself producing any of these → STOP. You have left brainstorming.
+
+**The correct response:** "That's an implementation detail — let's capture it as a consideration for `/plan`. For now, what problem are we actually solving?"
 
 ---
 
@@ -75,7 +86,19 @@ When complete, summarize in **3–6 bullets**:
 - Risks
 - Success criteria
 
-Then proceed to **/plan** if needed.
+Then state: **"Brainstorming complete. Ready for `/plan` when you are."**
+
+## Hard Stop Gate
+
+After producing the summary:
+
+- **Do NOT** transition to planning automatically
+- **Do NOT** propose architectures
+- **Do NOT** create task breakdowns
+- **Do NOT** write any code
+- **WAIT** for the user to explicitly say `/plan` or give a different instruction
+
+If the user says "that looks right" or "good summary" — that confirms the **brainstorming output**, not permission to plan or implement.
 
 ---
 
@@ -85,5 +108,25 @@ Then proceed to **/plan** if needed.
 - Do not over-elaborate
 - Do not drift into solution design
 - Stop once clarity is achieved
+- **NEVER produce code, architecture, file structures, or implementation details**
+- **NEVER transition automatically to /plan — always STOP and wait**
+- If the user asks "how would we build this?" during brainstorming, answer: "Let's make sure we have the problem nailed down first. Once we're clear, `/plan` will answer the how."
 
 Brainstorming is a **tool for clarity**, not momentum.
+
+---
+
+## Red Flags — You Are Leaving Brainstorming
+
+If you catch yourself thinking any of these, STOP:
+
+| Thought | Reality |
+|---------|---------|
+| "Let me sketch out the architecture" | That's /plan, not brainstorming |
+| "Here's a quick code example" | That's /tdd, not brainstorming |
+| "We could use X library for this" | That's an implementation choice |
+| "The file structure would look like..." | That's architecture |
+| "Task 1 would be..." | That's planning |
+| "Let me just show a simple version" | That's implementation |
+| "Here's how the API would work" | That's API design (/plan) |
+| "The user asked how to build it" | Redirect to /plan. Brainstorming answers WHAT, not HOW |

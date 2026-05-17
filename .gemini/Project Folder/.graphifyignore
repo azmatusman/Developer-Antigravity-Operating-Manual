@@ -14,100 +14,89 @@ coverage/
 Thumbs.db
 *.pyc
 __pycache__
+.cache/
+.antigravity-cache/
+.parcel-cache/
+
 # Testing & Logs
 .coverage
 htmlcov/
 *.log
 test_results/
-# IDEs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.dump
+*.trace
+*.dmp
+hs_err_pid*
+
+# IDEs & OS
 .vscode/
 .idea/
 *.swp
-# Distribution
-.pytest_cache/
-# Large Data / Media (Exclude Large CSVs)
-*.csv
-*.png
-*.zip
+*.swo
+*.iml
+.gitconfig
+.gitkeep
+
 # VCS
 .git/
 .gitignore
 .gitmodules
+
+# AI & Tooling
+graphify-out/
+.gemini/
+.antigravityignore
+.graphifyignore
+GEMINI.md
+SUMMARY.md
+.prettierrc
+eslint.config.js
+
 # Node / Frontend
 out/
 .next/
 .nuxt/
 .svelte-kit/
 .vite/
-# Python
-__pycache__/
-*.py[cod]
-venv/
-# Java / JVM
-target/
-*.class
-*.jar
-# .NET / C++
-bin/
-obj/
-*.exe
-*.dll
-*.so
-# Go / Rust
-# Locks
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-poetry.lock
-Pipfile.lock
-# Logs / dumps
-logs/
-*.dump
-# Data
-*.db
-*.sqlite
-*.parquet
-# Media
-*.jpg
-*.jpeg
-*.gif
-*.mp4
-*.mp3
-# Archives
-*.tar
-*.gz
-# IDE / OS
-# Secrets
-.env.*
-*.key
-*.pem
-secrets/
-# Coverage / reports
-reports/
-# AI tooling
-graphify-out/
-.cache/
-.gitconfig
-.gitkeep
 bower_components/
 jspm_packages/
-.parcel-cache/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
 *.pyo
 *.pyd
+venv/
 ENV/
 pip-wheel-metadata/
 .eggs/
 *.egg-info/
+
+# Java / JVM
+target/
+*.class
+*.jar
 *.war
 *.ear
 .gradle/
 .mvn/
+
+# .NET / C++ / Rust / Go
+bin/
+obj/
 Debug/
 Release/
+*.exe
+*.dll
+*.so
 *.dylib
 *.obj
 *.o
@@ -115,31 +104,107 @@ pkg/
 Cargo.lock
 zig-cache/
 zig-out/
+
+# Other Languages
 composer.lock
-*.trace
-*.dmp
-hs_err_pid*
-*.sqlite3
-*.mdb
+
+# Data & Documents
+*.csv
 *.tsv
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.mdb
 *.orc
 *.avro
 *.dat
+doc/_build/
+site/
+
+# Media & Archives
+*.jpg
+*.jpeg
+*.png
+*.gif
 *.webp
 *.svg
 *.ico
+*.mp4
+*.mp3
 *.mov
 *.avi
 *.mkv
 *.wav
+*.zip
+*.tar
+*.gz
 *.rar
 *.7z
-*.iml
-*.swo
+
+# Secrets
+.env.*
+*.key
+*.pem
 *.crt
 *.pfx
 *.kubeconfig
+secrets/
 credentials/
-doc/_build/
-site/
-.antigravity-cache/
+# Coverage / reports
+reports/
+
+# Distribution
+.pytest_cache/
+
+poetry.lock
+Pipfile.lock
+
+# Linter & Formatter Caches
+.eslintcache
+.prettiercache
+
+# TypeScript & Test Caches
+*.tsbuildinfo
+.vitest/
+
+# Source Maps
+*.map
+*.js.map
+*.css.map
+
+# Binary Documents
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# Web Exports & Dumps
+*.har
+
+# Fonts & Typography
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
+
+# Exclude Tests from Graphify
+*.test.ts
+*.spec.ts
+*.test.js
+*.spec.js
+__tests__/
+tests/
+
+# Exclude Styling from Graphify
+*.css
+*.scss
+*.sass
+*.less
+styles/
+src/style.css
+
+# Exclude Public & Static Assets
+public/
+src/assets/
